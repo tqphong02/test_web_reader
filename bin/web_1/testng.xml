@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite">
+    <listeners>
+        <listener class-name="web_1.TestListener"/>
+    </listeners>
+    <test name="BTT_Test">
+        <classes>
+            <class name="web_1.BTT_Test">
+                <methods>
+                    <include name="testLogin"/>
+                    <include name="testSearch"/>
+                    <include name="testFollow"/>
+                    <include name="testUnfollow"/>
+                    <include name="testLogout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
